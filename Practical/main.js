@@ -19,11 +19,15 @@ const SELECTIONS =[
 selectionButtons.forEach(selectionButton =>{
     selectionButton.addEventListener('click', e =>{
         const selectionName = selectionButton.dataset.selection
-        SELECTIONS.find(selection =>selection.name === selectionName)
-        makeSelection(selectionName)
+        const selection =  SELECTIONS.find(selection =>selection.name === selectionName)
+        makeSelection(selection)
     })
 })
 
 function makeSelection(selection){
     console.log(selection)
+}
+
+function randomSelection(){
+    const randomIndex = Math.floor.random()
 }
