@@ -23,7 +23,8 @@ body{
 .results{
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center ;
     align-items: center;
     margin-top: 1rem;
 }
