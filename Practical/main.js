@@ -29,5 +29,5 @@ function makeSelection(selection){
 }
 
 function randomSelection(){
-    const randomIndex = Math.floor.random()
+    const randomIndex = Math.floor(Math.random() * SELECTIONS.length)
 }
