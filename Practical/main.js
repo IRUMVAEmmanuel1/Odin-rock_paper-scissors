@@ -26,13 +26,14 @@ selectionButtons.forEach(selectionButton =>{
 
 function makeSelection(selection){
     const computerSelection = randomSelection()
-    const yourWinner =isWinner(selection, computerSelection)
+    const yourWinner = isWinner(selection, computerSelection)
     const computerWinner = isWinner(computerSelection, selection)
+   
     addSelectionResult(computerSelection, computerWinner)
-    addSelectionResult(computerSelection, yourWinner)
+    addSelectionResult(Selection, yourWinner)
 }
 
-function selectionResult(selection, winner){
+function addSelectionResult(selection, winner){
 
 }
 function isWinner(selection, opponentSelection){
