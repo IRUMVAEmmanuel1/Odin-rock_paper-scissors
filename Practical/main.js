@@ -1,1 +1,1 @@
-console.log("this is real")
+const selectionButtons = document.querySelector('rock')
