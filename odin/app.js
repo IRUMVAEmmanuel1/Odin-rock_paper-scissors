@@ -4,3 +4,4 @@ const computerPlay = () =>{
     const compChoice = arrOfChoices[randomNum]
     return compChoice
 }
+
