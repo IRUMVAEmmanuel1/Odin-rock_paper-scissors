@@ -5,3 +5,11 @@ const computerPlay = () =>{
     return compChoice
 }
 
+const playRound = (playerSelection, computerSelection) =>{
+    if (playerSelection === 'rock' && computerSelection==='rock'){
+        return "You tied! You both picked rock" 
+    }
+    else if(playerSelection === 'scissors'  && computerSelection === 'scissors'){
+
+    }
+}
