@@ -10,6 +10,11 @@ const playRound = (playerSelection, computerSelection) =>{
         return "You tied! You both picked rock" 
     }
     else if(playerSelection === 'scissors'  && computerSelection === 'scissors'){
+        return "You tied! You both Picked Scissors "
+
+    }
+    else if(playerSelection === 'scissors'  && computerSelection === 'rock'){
+        return "You lost! Rock crushes Scissors "
 
     }
 }
