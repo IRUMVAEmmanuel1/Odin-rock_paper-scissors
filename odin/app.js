@@ -29,8 +29,12 @@ const playRound = (playerSelection, computerSelection) =>{
         return "You lost!  Paper cover Rocks "
 
     }
-    else if(playerSelection === 'rock'  && computerSelection === 'scissors'){
-        return "You Won!  Rock crushes Scissors"
+    else if(playerSelection === 'paper'  && computerSelection === 'scissors'){
+        return "You lost!  Scissors cut paper "
+
+    }
+    else if(playerSelection === 'paper'  && computerSelection === 'rock'){
+        return "You won!  paper covers rock "
 
     }
 }
