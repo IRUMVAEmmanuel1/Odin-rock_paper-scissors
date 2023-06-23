@@ -1,5 +1,5 @@
 const computerPlay = () =>{
-    const arrOfChoices = ['Rock', 'Paper','Scissors']
+    const arrOfChoices = ['rock', 'paper','scissors']
     const randomNum = Math.floor(Math.random() *3 )
     const compChoice = arrOfChoices[randomNum]
     return compChoice
@@ -13,24 +13,29 @@ const playRound = (playerSelection, computerSelection) =>{
         return "You tied! You both Picked Scissors "
 
     }
+    else if(playerSelection === 'paper'  && computerSelection === 'paper'){
+        return "You tied! You both Picked paper "
+
+    }
     else if(playerSelection === 'scissors'  && computerSelection === 'rock'){
         return "You lost! Rock crushes Scissors "
 
     }
     else if(playerSelection === 'scissors'  && computerSelection === 'paper'){
-        return "You lost!  Scissors cuts paper "
+        return "You won!  Scissors cuts paper "
 
     }
-    else if(playerSelection === 'scissors'  && computerSelection === 'paper'){
-        return "You lost!  Scissors cuts paper "
-
-    }
+    
     else if(playerSelection === 'rock'  && computerSelection === 'paper'){
         return "You lost!  Paper cover Rocks "
 
     }
+    else if(playerSelection === 'rock'  && computerSelection === 'scissors'){
+        return "You won! Rock crushes Scissors "
+
+    }
     else if(playerSelection === 'paper'  && computerSelection === 'scissors'){
-        return "You lost!  Scissors cut paper "
+        return "You lost! Scissors cuts Paper "
 
     }
     else if(playerSelection === 'paper'  && computerSelection === 'rock'){
