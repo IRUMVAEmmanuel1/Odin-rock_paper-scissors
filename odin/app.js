@@ -1,3 +1,5 @@
+let playScore = 0
+let compScore = 0
 const computerPlay = () =>{
     const arrOfChoices = ['rock', 'paper','scissors']
     const randomNum = Math.floor(Math.random() *3 )
