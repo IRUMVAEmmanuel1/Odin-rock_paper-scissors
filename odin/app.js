@@ -8,11 +8,11 @@ const computerPlay = () => {
 };
 
 const playRound = (playerSelection, computerSelection) => {
+    console.log('1', playerSelection, '2',computerSelection)
 	if (playerSelection === "rock" && computerSelection === "rock") {
 		return "You tied! You both picked rock";
 	} else if (
-		playerSelection === "scissors" &&
-		computerSelection === "scissors"
+		playerSelection === "scissors" && computerSelection === "scissors"
 	) {
 		return "You tied! You both Picked Scissors ";
 	} else if (playerSelection === "paper" && computerSelection === "paper") {
@@ -26,15 +26,23 @@ const playRound = (playerSelection, computerSelection) => {
 	} else if (playerSelection === "rock" && computerSelection === "scissors") {
 		return "You won! Rock crushes Scissors ";
 	}
-	// else if(playerSelection === 'paper'  && computerSelection === 'scissors'){
-	//     return "You lost! Scissors cuts Paper "
+	else if(playerSelection === 'paper'  && computerSelection === 'scissors'){
+	    return "You lost! Scissors cuts Paper ";
 
-	// }
+	}
 	else if (playerSelection === "paper" && computerSelection === "rock") {
 		return "You won!  paper covers rock ";
 	}
 };
 
 const playerSelection = "rock";
-const computerSelection = computerPlay();
-console.log(playRound(playerSelection, computerSelection));
+
+
+const game = () =>{
+    for(let i= 0; i<5; i++ ){
+        const computerSelection = computerPlay();
+        console.log(playRound(playerSelection, computerSelection));
+    }
+}
+game();
+
