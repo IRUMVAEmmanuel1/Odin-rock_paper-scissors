@@ -57,4 +57,4 @@ const game = () => {
 		return 'You tied both, Not too bad!'
 	}
 };
-console.log(game());
+console.log(game())
