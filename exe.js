@@ -1,5 +1,5 @@
 function getComputerChoice() {
-    const choices = ["Rock", "Paper", "Scissors"];
+    const choices = ['Rock', 'Paper', 'Scissors'];
     return choices[Math.floor(Math.random() * choices.length)];
   }
   
@@ -8,15 +8,15 @@ function getComputerChoice() {
     const computerChoice = computerSelection.toLowerCase();
   
     if (playerChoice === computerChoice) {
-      return "It's a tie!";
+      return 'It's a tie!';
     } else if (
-      (playerChoice === "rock" && computerChoice === "scissors") ||
-      (playerChoice === "paper" && computerChoice === "rock") ||
-      (playerChoice === "scissors" && computerChoice === "paper")
+      (playerChoice === 'rock' && computerChoice === 'scissors') ||
+      (playerChoice === 'paper' && computerChoice === 'rock') ||
+      (playerChoice === 'scissors' && computerChoice === 'paper')
     ) {
-      return "You win!";
+      return 'You win!';
     } else {
-      return "You lose!";
+      return 'You lose!';
     }
   }
   
@@ -25,25 +25,25 @@ function getComputerChoice() {
     let computerScore = 0;
   
     for (let round = 1; round <= 5; round++) {
-      const playerSelection = prompt("What is your choice? (rock, paper, scissors): ");
+      const playerSelection = prompt('What is your choice? (rock, paper, scissors): ');
       const computerSelection = getComputerChoice();
   
       const result = playRound(playerSelection, computerSelection);
       console.log(`Round ${round}: ${result}`);
   
-      if (result === "You win!") {
+      if (result === 'You win!') {
         playerScore++;
-      } else if (result === "You lose!") {
+      } else if (result === 'You lose!') {
         computerScore++;
       }
     }
   
     if (playerScore > computerScore) {
-      console.log("You won!");
+      console.log('You won!');
     } else if (playerScore < computerScore) {
-      console.log("You lost!");
+      console.log('You lost!');
     } else {
-      console.log("It's a tie!");
+      console.log('It's a tie!');
     }
   }
   
