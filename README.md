@@ -1,6 +1,6 @@
 # Rock Paper Scissors Game | Andela KickStart Program
 
-This is a simple Rock Paper Scissors game programmed in JavaScript. The game allows players to compete against the computer in the classic hand game..
+This is a simple Rock Paper Scissors game programmed in JavaScript. The game allows players to compete against the computer in the classic hand game.
 
 ## Features
 
@@ -11,7 +11,6 @@ This is a simple Rock Paper Scissors game programmed in JavaScript. The game all
 - Option to play again after each round.
 
 ## Technologies Used
-
 - JavaScript
 - HTML
 
