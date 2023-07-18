@@ -11,6 +11,7 @@ This is a simple Rock Paper Scissors game programmed in JavaScript. The game all
 - Option to play again after each round.
 
 ## Technologies Used
+
 - JavaScript
 - HTML
 
